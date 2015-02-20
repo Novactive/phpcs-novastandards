@@ -3,7 +3,7 @@
     "description": "Novactive PHP_CodeSniffer coding standards for eZ Publish, Symfony2, ...",
     "keywords":    ["CodeSniffer", "checkstyle", "standards", "PSR2", "eZ Publish"],
     "homepage":    "https://github.com/Novactive/phpcs-novastandards",
-    "license":     "BSD-2.0",
+    "license":     "BSD-2-Clause",
     "authors":     [
         {
             "name":  "Novactive Team",
