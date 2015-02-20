@@ -5,7 +5,7 @@ Novactive PHP_CodeSniffer custom standards
 
 This package provides some PHP_CodeSniffer compliant coding standards, used at [Novactive](http://www.novactive.com).
 
-[![Build Status](https://travis-ci.org/Novactive/phpcs-novastandards.svg?branch=develop)](https://travis-ci.org/Novactive/phpcs-novastandards)
+[![Build Status](https://travis-ci.org/Novactive/phpcs-novastandards.svg?branch=master)](https://travis-ci.org/Novactive/phpcs-novastandards)
 
 # Requirements
 
