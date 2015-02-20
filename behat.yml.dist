@@ -1,0 +1,13 @@
+default:
+    suites:
+        novaphp_features:
+            paths:    [ %paths.base%/features/NovaPHP ]
+            contexts: [ Nova\Standards\Tests\FeatureContext ]
+        novaez_features:
+            paths:    [ %paths.base%/features/NovaEZ ]
+            contexts: [ Nova\Standards\Tests\FeatureContext ]
+
+ci:
+    formatters:
+        progress: true
+

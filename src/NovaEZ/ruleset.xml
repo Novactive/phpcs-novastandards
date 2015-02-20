@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<ruleset name="NovaEZ">
+  <description>Novactive coding standard for eZ Publish projects</description>
+
+  <rule ref="../NovaPHP" />
+  <rule ref="../ezcs/" />
+
+  <rule ref="NovaPHP.Commenting.FunctionComment.MissingParamComment">
+    <severity>0</severity>
+  </rule>
+  <rule ref="NovaPHP.Commenting.FunctionComment.SpacingBeforeParams">
+    <severity>0</severity>
+  </rule>
+  <rule ref="NovaPHP.Commenting.FunctionComment.SpacingAfterParams">
+    <severity>0</severity>
+  </rule>
+
+  <exclude-pattern>*/*.ini.append.php</exclude-pattern>
+</ruleset>

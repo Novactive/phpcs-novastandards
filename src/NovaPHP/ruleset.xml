@@ -1,0 +1,48 @@
+<?xml version="1.0"?>
+<ruleset name="NovaPHP">
+  <description>Novactive coding standard for generic PHP project</description>
+
+  <exclude-pattern>*/vendor/*</exclude-pattern>
+  <exclude-pattern>*/*.js</exclude-pattern>
+  <exclude-pattern>*/*.css</exclude-pattern>
+
+  <rule ref="Generic">
+    <exclude name="Generic.CodeAnalysis.EmptyStatement" />
+    <exclude name="Generic.Files.EndFileNoNewline" />
+    <exclude name="Generic.Files.LowercasedFilename" />
+    <exclude name="Generic.Formatting.MultipleStatementAlignment" />
+    <exclude name="Generic.Formatting.SpaceAfterCast" />
+    <exclude name="Generic.Functions.OpeningFunctionBraceKernighanRitchie" />
+    <exclude name="Generic.Functions.OpeningFunctionBraceBsdAllman" />
+    <exclude name="Generic.Metrics.CyclomaticComplexity" />
+    <exclude name="Generic.PHP.ClosingPHPTag" />
+    <exclude name="Generic.PHP.UpperCaseConstant" />
+    <exclude name="Generic.Strings.UnnecessaryStringConcat" />
+    <exclude name="Generic.WhiteSpace.DisallowSpaceIndent"/>
+  </rule>
+
+  <!-- Lines can be 135 chars long, show errors at 150 chars -->
+  <rule ref="Generic.Files.LineLength">
+    <properties>
+      <property name="lineLimit" value="135"/>
+      <property name="absoluteLineLimit" value="150"/>
+    </properties>
+  </rule>
+  <rule ref="PEAR.Commenting.InlineComment"/>
+  <rule ref="PEAR.Files.IncludingFile"/>
+  <rule ref="Squiz.Arrays.ArrayBracketSpacing" />
+  <rule ref="Squiz.Commenting.EmptyCatchComment" />
+  <rule ref="Squiz.Commenting.VariableComment" />
+  <rule ref="Squiz.Commenting.VariableComment.ShortFullStop">
+    <severity>0</severity>
+  </rule>
+  <rule ref="Squiz.Commenting.VariableComment.SpacingBeforeTags">
+    <severity>0</severity>
+  </rule>
+  <rule ref="Squiz.Commenting.VariableComment.LongNotCapital">
+    <severity>0</severity>
+  </rule>
+  <rule ref="Squiz.Commenting.VariableComment.ShortNotCapital">
+    <severity>0</severity>
+  </rule>
+</ruleset>

@@ -1,0 +1,15 @@
+language: php
+
+php:
+  - "5.4"
+  - "5.5"
+  - "5.6"
+
+install:
+  - rm -rf build && mkdir -p build/logs
+  - composer update --prefer-dist --no-interaction
+
+script:
+  - ./vendor/bin/behat --profile ci
+  - ./vendor/bin/phpcs --standard=PHPCS src/Nova* --report-checkstyle=build/logs/checkstyle.xml
+

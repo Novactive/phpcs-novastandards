@@ -1,0 +1,30 @@
+{
+    "name":        "novactive/phpcs-novastandards",
+    "description": "Novactive PHP_CodeSniffer coding standards for eZ Publish, Symfony2, ...",
+    "keywords":    ["CodeSniffer", "checkstyle", "standards", "PSR2", "eZ Publish"],
+    "homepage":    "https://github.com/Novactive/phpcs-novastandards",
+    "license":     "BSD-2.0",
+    "authors":     [
+        {
+            "name":  "Novactive Team",
+            "email": "contact-us@novactive.com"
+        }
+    ],
+    "support": {
+        "issues": "https://github.com/Novactive/phpcs-novastandards/issues",
+        "source": "https://github.com/Novactive/phpcs-novastandards"
+    },
+    "require":     {
+        "squizlabs/php_codesniffer": "~1.5"
+    },
+    "require-dev":     {
+        "behat/behat": "~3.0",
+        "phpunit/phpunit": "~4.0.7"
+    },
+    "autoload":    {
+        "psr-4": {
+            "Nova\\Standards\\": "src/",
+            "Nova\\Standards\\Tests\\": "features/bootstrap"
+        }
+    }
+}
