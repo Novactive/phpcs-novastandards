@@ -1,5 +1,5 @@
-Novactive Standards for PHP_CodeSniffer
-=======================================
+Novactive PHP_CodeSniffer custom standards
+==========================================
 
 # About
 
