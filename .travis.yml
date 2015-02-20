@@ -5,11 +5,22 @@ php:
   - "5.5"
   - "5.6"
 
+env:
+  global:
+    - ROOT_DIR=`pwd`
+    - SRC_DIR='.'
+    - PHPCS_STANDARD='PHPCS'
+
+before_install:
+  - curl -sS https://getcomposer.org/installer | php -- --quiet
+
 install:
-  - rm -rf build && mkdir -p build/logs
-  - composer update --prefer-dist --no-interaction
+  - php composer.phar install --prefer-dist --no-interaction
+
+before_script:
+  - rm -rf build && mkdir -m 0775 -p build/logs
 
 script:
   - ./vendor/bin/behat --profile ci
-  - ./vendor/bin/phpcs --standard=PHPCS src/Nova* --report-checkstyle=build/logs/checkstyle.xml
+  - ./vendor/bin/phpcs --standard=$PHPCS_STANDARD src/Nova* --report-checkstyle=$ROOT_DIR/build/logs/checkstyle.xml
 
