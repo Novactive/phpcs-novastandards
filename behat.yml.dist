@@ -9,5 +9,7 @@ default:
 
 ci:
     formatters:
+        junit:
+            output_path: build/logs/junit
         progress: true
 
