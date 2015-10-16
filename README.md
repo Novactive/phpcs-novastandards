@@ -41,17 +41,33 @@ From the sources ROOT directory of your project :
 
 ## PHPStorm
 
+### Configure CodeSniffer
+
+Open the PHPStorm Preferences / settings panel and go to the Code Sniffer section. You should define the value for parameter "PHP Code Sniffer (phpcs) path" for instance :
+
+* "wwwroot/bin/phpcs" for eZ Publish
+* "wwwroot/vendor/bin/phpcs" for other techno using composer
+* "~/.composer/vendor/bin/phpcs" if you installed CodeSniffer globally on your system using the command:
+
+    php composer.phar global require squizlabs/php_codesniffer
+
+
+![PHP Code Sniffer path configuration window](./screenshots/config-phpstorm-01.png)
+
+
+### Configure which standard to use
+
 Open the PHPStorm Preferences / settings panel and go to the Inspections section. You should enable "PHP > PHP Code Sniffer validation" and fill in the path to required standard, for instance :
 
 * "vendor/novactive/phpcs-novastandards/src/NovaEZ" for eZ Publish
 * "vendor/novactive/phpcs-novastandards/src/NovaPSR2" for Symfony 2 and PSR2 compliant apps
 
-![PHP Code Sniffer validation configuration window](./screenshots/config-phpstorm.png)
+![PHP Code Sniffer standard configuration window](./screenshots/config-phpstorm-02.png)
 
 
 # Bug and issues
 
-The standards are still under active development. Expect bugs and "false negatives" when checking code. Feel free to report them on the repository [issues section](https://github.com/Novactive/phpcs-novastandards/issues).
+The standards are still under active development. Expect bugs and "false negatives" when checking code. Feel free to report them on the [issues section](https://github.com/Novactive/phpcs-novastandards/issues).
 
 
 # Credits
